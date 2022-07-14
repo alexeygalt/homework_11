@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body align="center">
+<h1>Найдено со скиллом {{key_skill}}: {{key_list | length}} </h1>
+{%for item in key_list%}
+<p><a href="/candidates/{{item.pk}}">{{item.name}}</a></p>
+{%endfor%}
+
+
+</body>
+</html>
